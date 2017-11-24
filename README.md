@@ -14,7 +14,7 @@ Though some areas are more likely to have high levels of radon, all dwellings sh
 
 Because radon is very dense, it tends to collect in basements so that is where testing is done.
 
-![Image](scary-radon-diagram.png?raw=true)
+![Image](scary-radon-diagram.PNG?raw=true)
 
 Health Canada recommends that houses that exceed an average annual radon concentration of 200 becquerels per cubic metre (200 Bq/m³/y) should have the basement walls and floors sealed and additional forced air systems installed to [vent the radon](http://www.hc-sc.gc.ca/ewh-semt/radiation/radon/faq_fq-eng.php#indoor).
 
