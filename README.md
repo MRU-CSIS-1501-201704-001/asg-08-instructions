@@ -53,7 +53,7 @@ To do this, you would need to create the following:
 
         The report should look like:
 
-            House Address		          Level	             Rating
+            House Address		         Level	       Rating
             1400       Rue Marie Curie	 132.0056      Safe – no remediation required
             1404       Rue Marie Curie	 456.7894      Hazardous – remediation required
             1412       Rue Marie Curie	 965.0003      Dangerous – immediate remediation required
