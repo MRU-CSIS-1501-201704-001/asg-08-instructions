@@ -39,17 +39,16 @@ To do this, you would need to create the following:
  
 1. A **RadonProcessor** class that processes the data.  This class will have at least one ArrayList which contains the houses in the block.  Other ArrayLists may be required and should be included whenever necessary. 
 
-For the Radon Processor class, the methods that will process the menu choices should be declared as public.  Other methods (helper methods) should be declared as private.  Each public method should have a Javadoc comment consisitng of a single summarizing sentence as to **what** the method does (not how it does it) as well as any necessary @param and @return info. Each private method whould a one-sentence description of what it does. If there is further documentation that is needed inside method bodies, include it.
+    For the Radon Processor class, the methods that will process the menu choices should be declared as public.  Other methods (helper methods) should be declared as private.  Each public method should have a Javadoc comment consisitng of a single summarizing sentence as to **what** the method does (not how it does it) as well as any necessary @param and @return info. Each private method whould a one-sentence description of what it does. If there is further documentation that is needed inside method bodies, include it.
 
-This class should have methods that do the following:
+    This class should have methods that do the following:
 
     1. Read data from a text file to instantiate **House** objects and populate the ArrayList of houses.  This is to be done as the application is started.  The name of the data file is to be input by the user.
-    1. Print the contents of the ArrayList.  The house number and street name would be sufficient.  This will be used to confirm that the processing was done properly.
-    1. Print the details for each house.  This includes all instance variable values as well as the calculated yearly Radon level.
-    1. Search the ArrayList for a particular address (for this assignment, we will only use the house number as a search criteria).  This will return the index if found or -1 if not in the ArrayList.  This will be used by other methods to confirm the existence of this address before any processing can be done.
-    1. “Demolish” a house.  A search must be done to confirm that the house exists.  If so, then the house is to be removed from the ArrayList.  Otherwise, a message that no house was demolished is printed.  You can confirm that this was done properly by printing the ArrayList (as a separate step).
-    1. Add an infill to a vacant lot.  First, confirm that the address does not exist in the ArrayList.  Hence, the lot that is allocated to this address is indeed vacant.  An infill is a tall thin duplex.  Hence, you will need to instantiate 2 house objects and insert into the ArrayList in the proper location.  (Note: you may need to create an alternate search method for this).  For the daily Radon reading, you should take the average of the readings of the houses on either side of the lot. If the lot is at the beginning of the block or at the end of the block, assume the value will be the same as the lot next to it.  For the address, the first one will have the regular house number, and the second one will have a number that is 2 away.  For example, you create a duplex in the lot allocated for house number 1504.  The first of the duplex will have a house number 1504, the second one, 1506. 
-
+   1. Print the contents of the ArrayList.  The house number and street name would be sufficient.  This will be used to confirm that the processing was done properly.
+   1. Print the details for each house.  This includes all instance variable values as well as the calculated yearly Radon level.
+   1. Search the ArrayList for a particular address (for this assignment, we will only use the house number as a search criteria).  This will return the index if found or -1 if not in the ArrayList.  This will be used by other methods to confirm the existence of this address before any processing can be done.
+   1. “Demolish” a house.  A search must be done to confirm that the house exists.  If so, then the house is to be removed from the ArrayList.  Otherwise, a message that no house was demolished is printed.  You can confirm that this was done properly by printing the ArrayList (as a separate step).
+   1. Add an infill to a vacant lot.  First, confirm that the address does not exist in the ArrayList.  Hence, the lot that is allocated to this address is indeed vacant.  An infill is a tall thin duplex.  Hence, you will need to instantiate 2 house objects and insert into the ArrayList in the proper location.  (Note: you may need to create an alternate search method for this).  For the daily Radon reading, you should take the average of the readings of the houses on either side of the lot. If the lot is at the beginning of the block or at the end of the block, assume the value will be the same as the lot next to it.  For the address, the first one will have the regular house number, and the second one will have a number that is 2 away.  For example, you create a duplex in the lot allocated for house number 1504.  The first of the duplex will have a house number 1504, the second one, 1506. 
     1. Create a report that outputs the address, calculated Radon level, and relative danger rating for each house. Each house should be rated as to the relative danger of Radon exposure according to the following criteria:
         * < 200 Bq/m³/y is considered safe
         * < 800 Bq/m³/y is considered hazardous with remediation recommended
@@ -62,7 +61,7 @@ This class should have methods that do the following:
             1404       Rue Marie Curie	 456.7894      Hazardous – remediation required
             1412       Rue Marie Curie	 965.0003      Dangerous – immediate remediation required
 
-    1. Write the information contained in the ArrayList of houses into a text file in the same format as the original text file.  In this way, this output file can be used as an input at a later date.  This is to be done automatically before exiting the application.
+   1. Write the information contained in the ArrayList of houses into a text file in the same format as the original text file.  In this way, this output file can be used as an input at a later date.  This is to be done automatically before exiting the application.
 
 1. A **RadonClientApplication** class that contains the public run() and a variety of private helper methods.  The application will present a menu to the user and process the user’s choice by calling the appropriate methods of the processor class.  A skeleton of this application class will be provided.
 
