@@ -37,7 +37,11 @@ To do this, you would need to create the following:
 
     In addition, you will need to be able to calculate the yearly Radon level for the house.  This yearly level is the product of the average daily Radon reading, the basement volume and the number of days in a standard year.  **This yearly level should not be an instance variable, but should instead be calculated when required!** You will also need to be able to print the information about each house when required.
  
-1. A **RadonProcessor** class that processes the data.  This class will have at least one ArrayList which contains the houses in the block.  Other ArrayLists may be required and should be included whenever necessary.  This class should have methods that do the following:
+1. A **RadonProcessor** class that processes the data.  This class will have at least one ArrayList which contains the houses in the block.  Other ArrayLists may be required and should be included whenever necessary. 
+
+For the Radon Processor class, the methods that will process the menu choices should be declared as public.  Other methods (helper methods) should be declared as private.  Each public method should have a Javadoc comment consisitng of a single summarizing sentence as to **what** the method does (not how it does it) as well as any necessary @param and @return info. Each private method whould a one-sentence description of what it does. If there is further documentation that is needed inside method bodies, include it.
+
+This class should have methods that do the following:
 
     1. Read data from a text file to instantiate **House** objects and populate the ArrayList of houses.  This is to be done as the application is started.  The name of the data file is to be input by the user.
     1. Print the contents of the ArrayList.  The house number and street name would be sufficient.  This will be used to confirm that the processing was done properly.
@@ -60,7 +64,6 @@ To do this, you would need to create the following:
 
     1. Write the information contained in the ArrayList of houses into a text file in the same format as the original text file.  In this way, this output file can be used as an input at a later date.  This is to be done automatically before exiting the application.
 
-        For the Radon Processor class, the methods that will process the menu choices should be declared as public.  Other methods (helper methods) should be declared as private.  In addition, describe what each method does with a one to two line description in addition to the documentation in the method body. 
 1. A **RadonClientApplication** class that contains the public run() and a variety of private helper methods.  The application will present a menu to the user and process the user’s choice by calling the appropriate methods of the processor class.  A skeleton of this application class will be provided.
 
     In addition, all inputs via keyboard should be in client application only - **do NOT do any keyboard input in RadonProcessor**.
